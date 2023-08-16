@@ -1,1 +1,26 @@
-test
+<div style="display: flex; background-color: white; padding: 5px;">
+    <div style="position: relative; background-color: #ce0033; padding: 4px; border-radius: 12px; display: flex; align-items: center;">
+        <button id="freeButton" style="padding: 0.75rem 1.5rem; border: none; border-radius: 0.5rem; background-color: #ce0033; color: rgba(255, 255, 255, 1); font-size: 0.875rem; font-weight: 500; cursor: pointer; transition: background-color 0.15s, color 0.15s; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
+            onmouseover="document.getElementById('freeButton').style.backgroundColor = '#8e8ea0'; document.getElementById('hoverBoxFree').style.display = 'block';"
+            onmouseout="document.getElementById('freeButton').style.backgroundColor = '#ce0033'; document.getElementById('hoverBoxFree').style.display = 'none';">
+            Version Gratuite
+        </button>
+        <button id="paidButton" style="position: relative; padding: 0.75rem 1.5rem; border: none; border-radius: 0.5rem; background-color: transparent; color: rgba(255, 255, 255, 1); font-size: 0.875rem; font-weight: 500; cursor: pointer; transition: background-color 0.15s, color 0.15s; position: relative; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
+            onmouseover="document.getElementById('freeButton').style.backgroundColor =  '#444444'; document.getElementById('hoverBoxPaid').style.display = 'block';"
+            onmouseout="document.getElementById('freeButton').style.backgroundColor = '#ce0033'; document.getElementById('hoverBoxPaid').style.display = 'none';">
+            Version Complète <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z" fill="#ffffff"/></svg>
+        </button>
+    </div>
+</div>
+
+<div style="display: flex; position: relative;">
+    <div id="hoverBoxFree" style="display: none; background-color: #ce0033; padding: 11px 15px; position: absolute; top: calc(100% + 12px); left: 0; text-align: center; border-radius: 12px; width: auto;">
+        <h4 style="color: white;">Free Version</h4>
+        <p style="color: #8e8ea0;">Limited features and capabilities</p>
+    </div>
+    <div id="hoverBoxPaid" style="display: none; background-color: #ce0033; padding: 11px 15px; position: absolute; top: calc(100% + 12px); left: 0; text-align: center; border-radius: 12px; width: auto;">
+        <h4 style="color: white;">Premium Version</h4>
+        <p style="color: #8e8ea0;">Advanced features and enhanced capabilities</p>
+        <button style="margin-top: 8px; padding: 0.5rem 1rem; border: none; border-radius: 0.25rem; background-color: #ce0033; color: white; font-size: 0.875rem; font-weight: 500; cursor: pointer; transition: background-color 0.15s, color 0.15s;">Upgrade Now</button>
+    </div>
+</div>
